@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>dslr dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<title>dslr dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+.form-control {
+    width: 200px;
+}
+
+.category-buttons {
+    display: inline-flex;
+}
+
+.category-input {
+    margin: 20px auto;
+    display: inline-flex;
+}
+
+
+.category-buttons div {
+    margin: 10px;
+}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <span class="w3-bar-item w3-left loginbtn">login</span>
+  <span class="w3-bar-item w3-right">My Dashboard</span>
+</div>
+
+<!-- login form details -->
+<div class="back-layer2" style="margin-top: 100px; margin-left: 30px;">
+  <div class="close">
+    <span class="close-btn">X</span>
+  </div>
+  <section class="login-form">
+    <form>
+      
+      <div class="form-group">
+        <div class="form-group">
+          <label for="exampleInputPassword1">Phone number</label>
+          <input type="text" class="form-control lphonenumber " id="exampleInputPassword2" placeholder="Your phone number" required>
+         <br />
+          <button type="button" class="btn btn-secondary  lgenerateotp" >Send OTP</button>
+         
+        </div>
+       
+       
+        <div class="form-group">
+          <label for="exampleInputPassword1">Validation</label>
+          <input type="password" class="form-control lverificationcode" id="exampleInputPassword12" placeholder="Enter your otp here" required>
+        </div>
+        <button type="button" class="btn btn-light lverifyotp" >Submit</button>
+       
+      </div>
+      <div id="lrecaptcha-container"></div>
+
+     
+    </form>
+    <a href="home.html" id="gotohome" style="display: none;">home</a>
+   
+  </section>
+       
+</div>
+
+
+
+
+
+
+
+
+
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+
+
+<script src="scripts/firebaseauth.js"></script>
+<script src="scripts/login2.js"></script>
+
+
+</body>
+</html>
